@@ -36,9 +36,9 @@ namespace Task07_3
             var move = Console.ReadLine();
 
             if (IsKnightMoveCorrect(move, whiteKnightPosition, blackKnightPosition))
-                Console.WriteLine("Ход разрешен");
+                Console.WriteLine("Ход разрешен ");
             else
-                Console.WriteLine("Ход запрещен");
+                Console.WriteLine("Ход запрещен ");
 
             Console.ReadKey();
         }
