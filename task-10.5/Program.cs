@@ -28,18 +28,22 @@ namespace task_10._5
                 Console.ReadKey();
                 return;
             }
-            if ((m < 0) && (k < n))
-                {
-                    Console.WriteLine("Для задачи должны выполняться условия m > 0 и k > n");
-                }
-            var day = 1;
-            for (var i = 1; n<k; i++)
+            if ((m < 0) || (n <= 0) || (k <= 0))
             {
-                n += n * (1 + m / 100);
-                day += 1;
+                Console.WriteLine("Для задачи должны выполняться условия m > 0, k >= 0 n >= 0");
+                Console.ReadKey();
             }
-            Console.WriteLine($"Лыжник пробежит больше k километров на {day} день");
-            Console.ReadKey();
+            else
+            {
+                var day = 1;
+                for (var i = 1; n < k; i++)
+                {
+                    n += n * (1 + m / 100);
+                    day += 1;
+                }
+                Console.WriteLine($"Лыжник пробежит больше k километров на {day} день");
+                Console.ReadKey();
+            }
         }
         static bool TryInputNumber(string message, out double number)
         {
@@ -49,7 +53,7 @@ namespace task_10._5
             if (!double.TryParse(input, out number))
             {
                 Console.WriteLine("Ошибка ввода");
-                return false;\
+                return false;
             }
 
             return true;
