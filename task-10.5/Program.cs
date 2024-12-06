@@ -32,6 +32,7 @@ namespace task_10._5
             {
                 Console.WriteLine("Для задачи должны выполняться условия m > 0, k >= 0 n >= 0");
                 Console.ReadKey();
+                return;
             }
             else
             {
