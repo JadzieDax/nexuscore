@@ -31,9 +31,7 @@ namespace task_11
                 return;
             }
 
-
             var numbers = new double[20];
-
             for (int i = 0; i < numbers.Length; i++)
             {
                 numbers[i] = b * Math.Pow(q, i);
@@ -53,7 +51,6 @@ namespace task_11
             PrintArray(ProductKArray(numbers, k));
 
             Console.ReadKey();
-
         }
         static bool TryInputNumber(string message, out double number)
         {
