@@ -49,7 +49,7 @@ namespace exam
             {
                 if (IsPrimeNumber(i) && IsPrimeNumber(n - i))
                 {
-                    Console.WriteLine($"Разложение заданного числа на простые слагаемые: {n} = {i} + {n - i}");
+                    Console.WriteLine($"Разложение числа на простые слагаемые: {n} = {i} + {n - i}");
                     return;
                 }
             }
